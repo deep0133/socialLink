@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --greyo2: hsl(0, 0%, 20%);
+  --White: hsl(0, 0%, 100%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+p {
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--OffBlack);
+  min-height: 100lvh;
+  width: 100%;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  min-width: 400px;
+  overflow: auto;
+}
+
+body > div {
+  background-color: var(--DarkGrey);
+  border-radius: 9px;
+  padding: 40px 40px 30px 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  margin: auto;
+  width: min(80%, "max-content");
+  font-family: inherit;
+}
+
+img {
+  width: 90px;
+  height: 90px;
+  border-radius: 999px;
+}
+
+.text-yellow {
+  font-family: inherit;
+  margin: -8px 0 5px 0px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.btn button {
+  color: white;
+  background-color: var(--greyo2);
+  padding: 12px 12px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 700;
+  transition: all;
+}
+
+.btn button:hover {
+  background-color: var(--green);
+  color: var(--greyo2);
+  cursor: pointer;
+}
